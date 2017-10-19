@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase; }
@@ -47,6 +47,18 @@ a {
     text-decoration: none;
     color: #004772; }
 
+.navbar-brand {
+  font-size: 15px;
+}
+
+.brand-heading {
+  font-size: 15px;
+}
+
+#about .content-section {
+  background: url("../img/wave.jpg");
+}
+
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
@@ -59,7 +71,12 @@ a {
     color: black;
     border: 1px solid black; }
   #mainNav .navbar-brand {
-    font-weight: 700; }
+    font-weight: 700; 
+    }
+  .navbar-brand img {
+    height: 50%;
+    width: auto;
+  }
   #mainNav a {
     color: black; }
   #mainNav .navbar-nav .nav-item {
@@ -103,7 +120,7 @@ a {
   padding: 200px 0;
   text-align: center;
   color: black;
-  /* background: url("../img/intro-bg.jpg") no-repeat bottom center scroll; */
+  /*background: url("../img/wave.jpg") no-repeat bottom center scroll;*/
   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -134,12 +151,12 @@ a {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   border-radius: 100% !important;
   background: transparent; }
   .btn-circle:focus, .btn-circle:hover {
-    color: white;
+    color: #004772;
     outline: none;
     background: rgba(255, 255, 255, 0.1); }
 
@@ -152,12 +169,13 @@ a {
 
 .download-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/wave.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover; 
+  max-height: 25px;}
 
 /*#map {
   width: 100%;
@@ -184,7 +202,7 @@ a {
   border: 1px solid #0097be;
   background-color: transparent; }
   .btn-default:focus, .btn-default:hover {
-    color: black;
+    color: white;
     border: 1px solid #0097be;
     outline: none;
     background-color: #0097be; }
@@ -203,10 +221,13 @@ ul.banner-social-buttons {
         margin-bottom: 0; } }
 
 footer {
-  padding: 50px 0; }
+  padding-bottom: 15px; }
   footer p {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 14px;
-    margin: 0; }
+    margin: 0;
+    color: black; }
 
 ::-moz-selection {
   background: #fcfcfc;
