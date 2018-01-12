@@ -160,9 +160,24 @@ body {
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; } }*/
 
+
+.bg-light {
+  color: black;
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
+
+#portfolio {
+  color: black;
+  padding:100px;
+}
+
+#portfolio h4 {
+  margin: 0 0 15px;
+}
 
 #portfolio .portfolio-item {
   right: 0;
@@ -203,10 +218,13 @@ body {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white; }
+    background-color: #e8f6f9; 
+    color: black;
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
     #portfolio .portfolio-item .portfolio-caption h4 {
       margin: 0;
-      text-transform: none; }
+      text-transform: none;
+      font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #portfolio .portfolio-item .portfolio-caption p {
       font-size: 16px;
       font-style: italic;
@@ -214,7 +232,24 @@ body {
       font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 #portfolio * {
-  z-index: 2;}
+  z-index: 2;
+}
+.bottom-img {
+  transform: rotate(90deg);
+}
+.portfolio-box {
+  background-color: #e8f6f9;
+  padding-top: 25px;
+}
+
+.modal-body {
+  color: black;
+}
+
+#img-caption {
+  font-size: 14px;
+  text-align: right;
+}
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -231,7 +266,7 @@ body {
   text-align: center;
   border: none;
   border-radius: 0;
-  background-clip: border-box;
+  /*background-clip: border-box;*/
   -webkit-box-shadow: none;
   box-shadow: none; }
   .portfolio-modal .modal-content h2 {
@@ -288,6 +323,10 @@ body {
 .portfolio-modal .modal-backdrop {
   display: none;
   opacity: 0; }
+
+#portfoliomodal1 img {
+  max-width: 100px;
+}
 
 /*.timeline {
   position: relative;

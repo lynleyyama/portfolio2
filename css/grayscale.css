@@ -7,7 +7,8 @@ body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 70%;
+  padding-top: 14%;
   color: white;
   background-color: white;
   }
@@ -42,10 +43,19 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #0097be; }
+  }
   a:focus, a:hover {
     text-decoration: none;
     color: #004772; }
+.line {
+  width: 500px;
+  border-top: 2px solid black;
+  }
+
+.img-responsive {
+  /* max-height: 350px; */
+  transform: rotate(0deg);
+}
 
 .navbar-brand {
   font-size: 15px;
@@ -53,11 +63,14 @@ a {
 
 .brand-heading {
   font-size: 15px;
+  text-align: left;
 }
 
-#about .content-section {
-  background: url("../img/wave.jpg");
+.intro-text {
+  text-align: left;
+  padding-bottom: 25%;
 }
+
 
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -87,10 +100,10 @@ a {
       /*color: fade(white, 80%);*/
       color: #0097be;
       outline: none;
-      background-color: transparent; }
+      background-color: white; }
     #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
       outline: none;
-      background-color: transparent; }
+      background-color: whtie; }
   @media (min-width: 992px) {
     #mainNav {
       padding-top: 20px;
@@ -100,7 +113,7 @@ a {
       transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
       letter-spacing: 1px;
       border-bottom: none;
-      background: transparent; }
+      background: white; }
       #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -117,7 +130,7 @@ a {
   display: table;
   width: 100%;
   height: auto;
-  padding: 200px 0;
+  padding-top: 400px;
   text-align: center;
   color: black;
   /*background: url("../img/wave.jpg") no-repeat bottom center scroll;*/
@@ -160,22 +173,44 @@ a {
     outline: none;
     background: rgba(255, 255, 255, 0.1); }
 
+#portfolioModal1 p{
+  color: black;
+  text-align: left;
+}
+
+#portfolioModal1 .item-intro {
+  text-align: center;
+}
+
+#portfolioModal1 img {
+  max-width: 600px;
+}
+
+#contact {
+  /* background: url("../img/conback.jpg"); */
+  max-height: 400px;
+  padding-bottom: 200px;
+}
+
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px; 
+  padding-top: 100px;
+  padding-bottom: 100px; 
   color: black;
   background-color: white;
   }
 
-.download-section {
+.download-section img {
   color: white;
-  background: url("../img/wave.jpg") no-repeat center center scroll;
+  /*background: url("../img/wave.jpg") no-repeat center center scroll; */
+  transform: rotate(90deg);
   background-color: black;
-  -webkit-background-size: cover;
+  max-height: 300px;
+  overflow: hidden;
+/*  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
-  max-height: 25px;}
+  background-size: cover; */
+  }
 
 /*#map {
   width: 100%;
@@ -187,6 +222,7 @@ a {
     padding-bottom: 200px; }
   #map {
     height: 350px; } }*/
+
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -247,8 +283,3 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
-
-.bg-light {
-  color: black;
-  background-color: white;
-}
